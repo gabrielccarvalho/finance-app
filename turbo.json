@@ -5,17 +5,28 @@
       "dependsOn": [
         "^build"
       ],
-      "env": [
-      ],
+      "env": [],
       "outputs": ["dist/**"]
     },
     "web#build": {
       "dependsOn": [
         "^build"
       ],
-      "env": [
-      ],
+      "env": [],
       "outputs": [".dist/**", "!.dist/cache/**"]
+    },
+    "api#build": {
+      "dependsOn": [
+        "^dev"
+      ],
+      "env": [],
+      "outputs": ["dist/**"]
+    },
+    "dev": {
+      "dependsOn": [
+        "^dev"
+      ],
+      "env": []
     }
   },
   "globalEnv": [
